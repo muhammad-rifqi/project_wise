@@ -9,7 +9,7 @@ $input = file_put_contents('log.txt', $output);
 if($input){
     $jsonData = file_get_contents('http://localhost:8080/project_wise/model/training_results.json');
     $encode = json_decode($jsonData,true);
-    $logs = 'http://localhost:8080/project_wise/log.txt';
+    $logs = file_get_contents('http://localhost:8080/project_wise/log.txt');
     $array = array(
         "success" => true,
         "data" => $encode,
