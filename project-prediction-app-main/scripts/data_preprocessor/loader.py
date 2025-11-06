@@ -19,19 +19,19 @@ class DataLoader:
         try:
             # Load datasets utama
             self._log("Loading datasets utama...")
-            allocations = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/allocations.csv')
-            projects = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/projects.csv')
-            team_members = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/team_members.csv')
-            risks = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/risks.csv')
-            project_technologies = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/project_technologies.csv')
+            allocations = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/allocations.csv')
+            projects = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/projects.csv')
+            team_members = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/team_members.csv')
+            risks = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/risks.csv')
+            project_technologies = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/project_technologies.csv')
 
             # Load datasets referensi
             self._log("Loading datasets referensi...")
-            expertise_levels = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/expertise_levels.csv')
-            sdlc_methods = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/sdlc_methods.csv')
-            risk_categories = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/risk_categories.csv')
-            risk_types = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/risk_types.csv')
-            technology_types = pd.read_csv('/andika_projek/andika_app/project-prediction-app-main/project-prediction-app-main/data/raw/technology_types.csv')
+            expertise_levels = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/expertise_levels.csv')
+            sdlc_methods = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/sdlc_methods.csv')
+            risk_categories = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/risk_categories.csv')
+            risk_types = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/risk_types.csv')
+            technology_types = pd.read_csv('/andika/project_wise/project-prediction-app-main/data/raw/technology_types.csv')
 
             self._log("Load data berhasil")
             self._log(f"Jumlah data projects: {len(projects)}")
