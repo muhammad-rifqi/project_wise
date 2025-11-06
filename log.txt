@@ -1,0 +1,218 @@
+======================================================================
+HYBRID MACHINE LEARNING MODEL TRAINING
+======================================================================
+[09:38:06] HYBRID MODEL TRAINING PIPELINE DIMULAI
+[09:38:06] TrainingPipeline: === FASE 1: DATA PROCESSING ===
+[09:38:06] DataLoader: Memulai proses loading data dari file CSV
+[09:38:06] DataLoader: Loading datasets utama...
+[09:38:06] DataLoader: Loading datasets referensi...
+[09:38:06] DataLoader: Load data berhasil
+[09:38:06] DataLoader: Jumlah data projects: 500
+[09:38:06] DataLoader: Jumlah data allocations: 500
+[09:38:06] DataLoader: Jumlah data team_members: 1817
+[09:38:06] DataLoader: Jumlah data risks: 1364
+[09:38:06] DataLoader: Jumlah data project_technologies: 1817
+[09:38:06] DataValidator: Memulai validasi kualitas data
+[09:38:06] DataValidator: Validasi dataset: allocations
+[09:38:06] DataValidator:   - Rows: 500, Columns: 9
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: projects
+[09:38:06] DataValidator:   - Rows: 500, Columns: 9
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: team_members
+[09:38:06] DataValidator:   - Rows: 1817, Columns: 8
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: risks
+[09:38:06] DataValidator:   - Rows: 1364, Columns: 10
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: project_technologies
+[09:38:06] DataValidator:   - Rows: 1817, Columns: 5
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: expertise_levels
+[09:38:06] DataValidator:   - Rows: 8, Columns: 2
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: sdlc_methods
+[09:38:06] DataValidator:   - Rows: 10, Columns: 2
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: risk_categories
+[09:38:06] DataValidator:   - Rows: 9, Columns: 2
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: risk_types
+[09:38:06] DataValidator:   - Rows: 16, Columns: 5
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Validasi dataset: technology_types
+[09:38:06] DataValidator:   - Rows: 10, Columns: 2
+[09:38:06] DataValidator:   - Missing values: 0
+[09:38:06] DataValidator:   - Duplicate rows: 0
+[09:38:06] DataValidator: Memeriksa konsistensi data antar dataset
+[09:38:06] DataValidator: Projects tanpa allocations: 0
+[09:38:06] DataValidator: Allocations tanpa projects: 0
+[09:38:06] TrainingPipeline: === FASE 2: FEATURE ENGINEERING ===
+[09:38:06] DataAggregator: Aggregasi data team members
+[09:38:06] DataAggregator: Aggregasi data risks
+[09:38:07] DataAggregator: Aggregasi data technologies
+[09:38:07] DataAggregator: Menggabungkan semua dataset
+[09:38:07] DataAggregator: Shape setelah merge: (500, 27)
+[09:38:07] DataAggregator: Handling missing values
+[09:38:07] DataAggregator: Missing values handling selesai
+[09:38:07] FeatureTransformer: Membuat target variable
+[09:38:07] FeatureTransformer: Success rate: 46.00%
+[09:38:07] FeatureTransformer: Memulai encoding categorical features
+[09:38:07] FeatureTransformer: Encoding categorical features selesai
+[09:38:07] FeatureTransformer: Memilih final features
+[09:38:07] FeatureTransformer: Final features: 24
+[09:38:07] FeatureTransformer: Numerical features: 14
+[09:38:07] FeatureTransformer: Categorical features: 10
+[09:38:07] DataVisualizer: Generating target distribution plot
+[09:38:07] DataVisualizer: Chart disimpan: 01_target_distribution.png
+[09:38:07] DataVisualizer: Generating feature distribution plots
+[09:38:12] DataVisualizer: Chart disimpan: 02_feature_distributions.png
+[09:38:12] DataVisualizer: Generating correlation matrix
+[09:38:13] DataVisualizer: Chart disimpan: 03_correlation_matrix.png
+[09:38:13] === FASE 3: DATA PREPARATION ===
+[09:38:13] Data siap: Training set (400, 24), Test set (100, 24)
+[09:38:13] TrainingPipeline: === FASE 4: MODEL TRAINING ===
+[09:38:13] GradientBoosting: Memulai training Gradient Boosting
+[09:38:14] GradientBoosting: Melakukan feature selection
+[09:38:14] GradientBoosting: Feature selection selesai: 12 features terpilih
+[09:38:14] GradientBoosting: Analisis feature importance
+[09:38:14] GradientBoosting: Top 5 Feature Importance:
+[09:38:14] GradientBoosting:   - avg_expertise: 0.1484
+[09:38:14] GradientBoosting:   - avg_salary: 0.1243
+[09:38:14] GradientBoosting:   - sdlc_method_id: 0.0888
+[09:38:14] GradientBoosting:   - additional_costs: 0.0617
+[09:38:14] GradientBoosting:   - duration_months: 0.0575
+[09:38:14] NeuralNetwork: Membangun arsitektur ANN
+[09:38:14] NeuralNetwork: Arsitektur ANN berhasil dibangun
+[09:38:14] NeuralNetwork: Memulai training ANN
+[09:38:21] NeuralNetwork: Training ANN selesai - 61 epochs
+[09:38:21] NeuralNetwork: Ekstraksi embeddings dari ANN
+
+ 1/13 [=>............................] - ETA: 1s
+13/13 [==============================] - 0s 2ms/step
+[09:38:21] NeuralNetwork: Embeddings shape: (400, 16)
+[09:38:21] NeuralNetwork: Ekstraksi embeddings dari ANN
+
+1/4 [======>.......................] - ETA: 0s
+4/4 [==============================] - 0s 2ms/step
+[09:38:21] NeuralNetwork: Embeddings shape: (100, 16)
+[09:38:21] HybridFusion: Membuat hybrid features
+[09:38:21] HybridFusion: Hybrid features created: (400, 28)
+[09:38:21] HybridFusion:   - GB features: 12
+[09:38:21] HybridFusion:   - ANN embeddings: 16
+[09:38:21] HybridFusion: Membuat hybrid features
+[09:38:21] HybridFusion: Hybrid features created: (100, 28)
+[09:38:21] HybridFusion:   - GB features: 12
+[09:38:21] HybridFusion:   - ANN embeddings: 16
+[09:38:21] NaiveBayes: Memulai training Naive Bayes
+[09:38:21] NaiveBayes: Applying feature scaling untuk Naive Bayes
+[09:38:21] NaiveBayes: Training Naive Bayes selesai
+[09:38:21] ModelMetrics: Menghitung metrics evaluasi
+[09:38:21] ModelMetrics: Metrics: Accuracy=0.8400, F1=0.8261, AUC=0.9062
+
+1/4 [======>.......................] - ETA: 0s
+4/4 [==============================] - 0s 2ms/step
+
+1/4 [======>.......................] - ETA: 0s
+4/4 [==============================] - 0s 2ms/step
+[09:38:21] ModelMetrics: Menghitung metrics evaluasi
+[09:38:21] ModelMetrics: Metrics: Accuracy=0.8100, F1=0.7865, AUC=0.8760
+[09:38:21] ModelMetrics: Menghitung metrics evaluasi
+[09:38:21] ModelMetrics: Metrics: Accuracy=0.7300, F1=0.7327, AUC=0.8446
+[09:38:21] HybridFusion: Membuat weighted predictions
+[09:38:21] HybridFusion: Weights digunakan: GB=0.5, ANN=0.4, NB=0.1
+[09:38:21] ModelMetrics: Mencari threshold optimal
+[09:38:22] ModelMetrics: Threshold optimal: 0.43 (F1=0.8387)
+[09:38:22] ModelMetrics: Menghitung metrics evaluasi
+[09:38:22] ModelMetrics: Metrics: Accuracy=0.8500, F1=0.8387, AUC=0.9082
+[09:38:22] EvalVisualizer: Generating ROC curves comparison
+[09:38:22] EvalVisualizer: Chart disimpan: 01_roc_curves_comparison.png
+[09:38:22] EvalVisualizer: Generating training history untuk Neural Network
+[09:38:23] EvalVisualizer: Chart disimpan: 02_training_history_neural_network.png
+[09:38:23] EvalVisualizer: Generating metrics comparison chart
+[09:38:25] EvalVisualizer: Chart disimpan: 03_metrics_comparison.png
+[09:38:25] EvalVisualizer: Generating confusion matrix untuk gradient_boosting
+[09:38:25] EvalVisualizer: Chart disimpan: 04_confusion_matrix_gradient_boosting.png
+[09:38:25] EvalVisualizer: Generating confusion matrix untuk neural_network
+[09:38:26] EvalVisualizer: Chart disimpan: 05_confusion_matrix_neural_network.png
+[09:38:26] EvalVisualizer: Generating confusion matrix untuk naive_bayes
+[09:38:26] EvalVisualizer: Chart disimpan: 06_confusion_matrix_naive_bayes.png
+[09:38:26] EvalVisualizer: Generating confusion matrix untuk Hybrid Model
+[09:38:27] EvalVisualizer: Chart disimpan: 07_confusion_matrix_hybrid_model.png
+[09:38:27] EvalVisualizer: Generating feature importance plot
+[09:38:28] EvalVisualizer: Chart disimpan: 08_feature_importance.png
+[09:38:28] ModelComparator: Melakukan analisis komparatif detail
+
+================================================================================
+COMPARATIVE MODEL PERFORMANCE ANALYSIS
+================================================================================
+Model                     Accuracy   Precision  Recall     F1-Score   ROC-AUC   
+--------------------------------------------------------------------------------
+Gradient Boosting         0.8400     0.8261     0.8261     0.8261     0.9062    
+Neural Network            0.8100     0.8140     0.7609     0.7865     0.8760    
+Naive Bayes               0.7300     0.6727     0.8043     0.7327     0.8446    
+Hybrid Weighted Voting    0.8500     0.8298     0.8478     0.8387     0.9082    
+================================================================================
+
+BEST PERFORMING MODELS:
+Best F1-Score: Hybrid (0.8387)
+Best ROC-AUC:  Hybrid (0.9082)
+Best Accuracy: Hybrid (0.8500)
+
+Hybrid vs Best Individual Improvement: +1.53%
+[09:38:28] === FASE 5: MENYIMPAN MODEL ===
+[09:38:28] === MENYIMPAN MODEL YANG SUDAH DI-TRAINING ===
+[09:38:28] ModelSerializer: === MENYIMPAN SEMUA MODEL DAN KOMPONEN ===
+[09:38:28] ModelSerializer: Menyimpan model gradient_boosting
+[09:38:28] ModelSerializer: Model gradient_boosting disimpan: model\trained_models\gradient_boosting.pkl
+[09:38:28] ModelSerializer: Menyimpan model neural_network
+[09:38:28] ModelSerializer: Model neural_network disimpan: model\trained_models\neural_network.h5
+[09:38:28] ModelSerializer: Menyimpan model embedding_model
+[09:38:28] ModelSerializer: Model embedding_model disimpan: model\trained_models\embedding_model.h5
+[09:38:28] ModelSerializer: Menyimpan model naive_bayes
+[09:38:28] ModelSerializer: Model naive_bayes disimpan: model\trained_models\naive_bayes.pkl
+[09:38:28] ModelSerializer: Menyimpan scaler standard_scaler
+[09:38:28] ModelSerializer: Scaler standard_scaler disimpan: model\preprocessors\standard_scaler.pkl
+[09:38:28] ModelSerializer: Menyimpan feature selector feature_selector
+[09:38:28] ModelSerializer: Feature selector feature_selector disimpan: model\preprocessors\feature_selector.pkl
+[09:38:28] ModelSerializer: Menyimpan feature names
+[09:38:28] ModelSerializer: Feature names disimpan: model\preprocessors\feature_names.json
+[09:38:28] ModelSerializer: Menyimpan model configuration
+[09:38:28] ModelSerializer: Model config disimpan: model\model_config.json
+[09:38:28] ModelSerializer: Menyimpan training results
+[09:38:28] ModelSerializer: Training results disimpan: model\training_results.json
+[09:38:28] ModelSerializer: === SEMUA MODEL BERHASIL DISIMPAN ===
+[09:38:28] Semua model berhasil disimpan di folder 'model/'
+[09:38:28] Pipeline selesai - Total waktu eksekusi: 21.65 detik
+
+======================================================================
+TRAINING PIPELINE BERHASIL DISELESAIKAN
+======================================================================
+
+HASIL TERBAIK (Hybrid Weighted Voting Model):
+Accuracy:  0.8500
+Precision: 0.8298
+Recall:    0.8478
+F1-Score:  0.8387
+ROC-AUC:   0.9082
+Optimal Threshold: 0.43
+
+Model disimpan di folder: model/
+gradient_boosting: model\trained_models\gradient_boosting.pkl
+neural_network: model\trained_models\neural_network.h5
+embedding_model: model\trained_models\embedding_model.h5
+naive_bayes: model\trained_models\naive_bayes.pkl
+scaler: model\preprocessors\standard_scaler.pkl
+feature_selector: model\preprocessors\feature_selector.pkl
+feature_names: model\preprocessors\feature_names.json
+config: model\model_config.json
+training_results: model\training_results.json
