@@ -1,0 +1,131 @@
+{
+  "individual_results": {
+    "gradient_boosting": {
+      "accuracy": 0.84,
+      "precision": 0.8260869565217391,
+      "recall": 0.8260869565217391,
+      "f1": 0.8260869565217391,
+      "roc_auc": 0.9061996779388084
+    },
+    "neural_network": {
+      "accuracy": 0.78,
+      "precision": 0.7727272727272727,
+      "recall": 0.7391304347826086,
+      "f1": 0.7555555555555555,
+      "roc_auc": 0.8840579710144927
+    },
+    "naive_bayes": {
+      "accuracy": 0.75,
+      "precision": 0.6981132075471698,
+      "recall": 0.8043478260869565,
+      "f1": 0.7474747474747474,
+      "roc_auc": 0.8635265700483091
+    }
+  },
+  "hybrid_results": {
+    "accuracy": 0.86,
+    "precision": 0.8478260869565217,
+    "recall": 0.8478260869565217,
+    "f1": 0.8478260869565218,
+    "roc_auc": 0.9037842190016103,
+    "threshold": 0.5000000000000002
+  },
+  "feature_importance": [
+    {
+      "feature": "avg_expertise",
+      "importance": 0.1483737886658595
+    },
+    {
+      "feature": "avg_salary",
+      "importance": 0.12427348917753271
+    },
+    {
+      "feature": "sdlc_method_id",
+      "importance": 0.0887813286902012
+    },
+    {
+      "feature": "additional_costs",
+      "importance": 0.06168080503416615
+    },
+    {
+      "feature": "duration_months",
+      "importance": 0.057503988871800193
+    },
+    {
+      "feature": "high_likelihood_risks",
+      "importance": 0.0563622543383497
+    },
+    {
+      "feature": "type_infrastructure_improvements",
+      "importance": 0.054218418935268485
+    },
+    {
+      "feature": "total_development_cost",
+      "importance": 0.05151039471092105
+    },
+    {
+      "feature": "max_expertise",
+      "importance": 0.04601220795006919
+    },
+    {
+      "feature": "type_blockchain_project",
+      "importance": 0.040625597688114065
+    },
+    {
+      "feature": "type_iot_implementation",
+      "importance": 0.038232582608670684
+    },
+    {
+      "feature": "total_tools",
+      "importance": 0.02861430649467971
+    },
+    {
+      "feature": "type_security_compliance",
+      "importance": 0.028276139382750566
+    },
+    {
+      "feature": "total_team_size",
+      "importance": 0.02699792220726254
+    },
+    {
+      "feature": "type_ai_ml_project",
+      "importance": 0.02649487546348847
+    },
+    {
+      "feature": "high_impact_risks",
+      "importance": 0.025062744276069922
+    },
+    {
+      "feature": "total_risks",
+      "importance": 0.024399757525603978
+    },
+    {
+      "feature": "type_data_governance",
+      "importance": 0.02039259658882394
+    },
+    {
+      "feature": "unique_tech_types",
+      "importance": 0.018182646816909405
+    },
+    {
+      "feature": "scale_encoded",
+      "importance": 0.01274768307841734
+    },
+    {
+      "feature": "type_software_development",
+      "importance": 0.011230847648728
+    },
+    {
+      "feature": "type_data_analytics",
+      "importance": 0.010025620803053505
+    },
+    {
+      "feature": "type_crm_implementation",
+      "importance": 3.0432597406432117e-09
+    },
+    {
+      "feature": "type_research_development",
+      "importance": 0.0
+    }
+  ]
+}
