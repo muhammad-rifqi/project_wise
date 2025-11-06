@@ -1,0 +1,37 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+
+# Data & Models (sebaiknya tidak diunggah ke Git jika terlalu besar)
+data/raw/
+models/
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+.nbhosting/
+
+# Environment variables
+.env
+.secret
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

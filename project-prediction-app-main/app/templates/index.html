@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Success Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>🚀 Project Success Predictor</h1>
+        <p>Input data proyek untuk prediksi keberhasilan</p>
+        
+        <form action="/predict" method="POST">
+            <div class="mb-3">
+                <label class="form-label">Duration (months)</label>
+                <input type="number" class="form-control" name="duration_months" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Team Size</label>
+                <input type="number" class="form-control" name="team_size" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict Success</button>
+        </form>
+    </div>
+</body>
+</html>

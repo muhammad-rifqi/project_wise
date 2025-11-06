@@ -1,0 +1,121 @@
+PROPRIETARY SOFTWARE LICENSE AGREEMENT
+
+Copyright (c) 2024 Andika Noor Ismawan. All rights reserved.
+
+THIS SOFTWARE AND DOCUMENTATION IS PROVIDED UNDER THE TERMS OF THIS PROPRIETARY
+LICENSE AGREEMENT. BY ACCESSING, USING, COPYING, OR DISTRIBUTING THIS SOFTWARE,
+YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS AGREEMENT.
+
+1. DEFINITIONS
+
+1.1 "Software" means the proprietary computer program, including source code, 
+    object code, documentation, associated media, printed materials, and 
+    online or electronic documentation, known as "Hybrid Machine Learning 
+    Prediction App" and any updates or modifications thereto.
+
+1.2 "Author" means Andika Noor Ismawan, the original creator and copyright 
+    holder of the Software.
+
+1.3 "User" means any individual or entity that accesses, uses, copies, 
+    or distributes the Software.
+
+2. LICENSE GRANT
+
+2.1 The Author grants you a limited, non-exclusive, non-transferable, 
+    non-sublicensable license to:
+    a) View the source code for personal evaluation and educational purposes
+    b) Fork the repository on GitHub for personal study purposes
+
+2.2 This license does NOT grant you the right to:
+    a) Use the Software for commercial purposes
+    b) Modify, adapt, or create derivative works based on the Software
+    c) Distribute, sublicense, lease, rent, or transfer the Software
+    d) Incorporate the Software into other products or services
+    e) Reverse engineer, decompile, disassemble, or attempt to derive 
+       the source code of the Software
+    f) Remove any proprietary notices or labels from the Software
+
+3. RESTRICTIONS
+
+3.1 The Software contains trade secrets and proprietary information of the 
+    Author. You may not disclose, provide, or otherwise make available the 
+    Software or any portion thereof to any third party without prior written 
+    consent from the Author.
+
+3.2 You may not use the Software in any manner that competes with the 
+    Author's interests or business activities.
+
+3.3 Any unauthorized use, reproduction, or distribution of the Software 
+    may result in civil and criminal penalties.
+
+4. INTELLECTUAL PROPERTY
+
+4.1 All intellectual property rights in the Software, including but not 
+    limited to copyrights, trade secrets, and any patentable inventions, 
+    are and shall remain the exclusive property of Andika Noor Ismawan.
+
+4.2 This License does not convey any ownership rights in the Software 
+    and does not constitute a sale of the Software.
+
+5. TERM AND TERMINATION
+
+5.1 This License is effective until terminated. Your rights under this 
+    License will terminate automatically without notice from the Author 
+    if you fail to comply with any term(s) of this License.
+
+5.2 Upon termination, you shall destroy all copies of the Software in 
+    your possession or control.
+
+6. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER 
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. 
+THE AUTHOR DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS 
+OR THAT ITS OPERATION WILL BE UNINTERRUPTED OR ERROR-FREE.
+
+7. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL ANDIKA NOOR ISMAWAN BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY 
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+8. GOVERNING LAW
+
+This License shall be governed by and construed in accordance with the 
+laws of the Republic of Indonesia, without regard to its conflict of 
+law provisions.
+
+9. PERMISSION REQUESTS
+
+For any uses not expressly granted herein, including commercial use, 
+modification, distribution, or incorporation into other projects, 
+please contact:
+
+Andika Noor Ismawan
+Email: noorismawanandika@gmail.com
+
+Any permitted use will require a separate written agreement.
+
+10. ENTIRE AGREEMENT
+
+This License constitutes the entire agreement between the parties 
+concerning the subject matter hereof and supersedes all prior 
+agreements and understandings.
+
+11. SEVERABILITY
+
+If any provision of this License is held to be unenforceable, 
+such provision shall be reformed only to the extent necessary 
+to make it enforceable, and the remaining provisions shall 
+remain in full force and effect.
+
+ACKNOWLEDGMENT
+
+BY USING, COPYING, OR DISTRIBUTING THIS SOFTWARE, YOU ACKNOWLEDGE 
+THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO 
+BE BOUND BY ITS TERMS AND CONDITIONS.
